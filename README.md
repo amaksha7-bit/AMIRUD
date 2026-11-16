@@ -28,22 +28,3 @@ After the site is deployed:
 3. Enter your live website URL and click Verify.
 4. If Pinterest provides a different tag, replace the meta tag in `index.html` with the exact new tag, redeploy, then verify again.
 
-## Deploy option A — easiest: Vercel Drop
-1. Extract this ZIP on your computer.
-2. Open https://vercel.com/drop and sign in.
-3. Drag the extracted `amirud-store` folder (the folder containing `index.html`) into the page.
-4. Follow the prompts and deploy.
-5. Vercel will provide a live `*.vercel.app` URL.
-
-## Deploy option B — GitHub + Vercel
-1. Create a new repository on https://github.com/new.
-2. Upload the contents of this folder to the repository root (make sure `index.html` is at the root).
-3. Open https://vercel.com/new and import the GitHub repository.
-4. For this plain HTML/CSS/JS site, no build command is needed. Deploy the project.
-5. Every later push to the connected production branch can trigger a new deployment.
-
-## Local preview
-Double-click `index.html` to preview in a browser. For best results, use a simple local server or Vercel preview.
-
-## Custom domain
-After deployment, open the Vercel project → Settings → Domains, add a domain you own, and follow Vercel's DNS instructions. Do not assume `amirud.in` or `amirud.com` is available until you check and register it.
