@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f7f3ee" />
+  <meta name="description" content="Discover AMIRUD — a unique bond with limitless possibilities." />
+  <meta name="p:domain_verify" content="fc87c78c1d9aaf9b0195624904fc8100"/>
+  <title>AMIRUD — A Unique Bond with Limitless Possibilities</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement">A thoughtful edit of everyday essentials <span>—</span> Welcome to AMIRUD</div>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="AMIRUD home">AMIRUD<span>.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#home">Home</a><a href="#shop">Shop</a><a href="#story">Our story</a><a href="#contact">Contact</a>
+    </nav>
+    <button class="cart-trigger" id="openCart" aria-label="Open shopping bag">Bag <span id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">A BRAND BUILT ON CONNECTION</p>
+        <h1>A unique bond.<br><em>Limitless possibilities.</em></h1>
+        <p class="hero-intro">A considered collection for the moments, rituals and details that make everyday life your own.</p>
+        <a class="button button-dark" href="#shop">Explore the collection <span>↗</span></a>
+      </div>
+      <div class="hero-art" aria-label="Abstract burgundy and cream brand artwork">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="art-disc"></div><div class="art-caption">THE AMIRUD EDIT<br><small>EST. 2026</small></div>
+      </div>
+    </section>
+
+    <section class="values-strip">
+      <div><span>01</span><p>Thoughtful by design</p></div><div><span>02</span><p>Made to feel personal</p></div><div><span>03</span><p>Rooted in possibility</p></div>
+    </section>
+
+    <section class="shop-section section-wrap" id="shop">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE COLLECTION</p><h2>Find your <em>everyday favourite.</em></h2></div>
+        <p class="section-note">A first look at the AMIRUD store. Product details and prices shown here are sample content to customise before launch.</p>
+      </div>
+      <div class="shop-toolbar">
+        <div class="filters" id="filters">
+          <button class="filter active" data-filter="all">All pieces</button>
+          <button class="filter" data-filter="essentials">Essentials</button>
+          <button class="filter" data-filter="living">Living</button>
+          <button class="filter" data-filter="gifting">Gifting</button>
+        </div>
+        <label class="sort-label">Sort <select id="sortSelect"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></label>
+      </div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <p class="demo-note">Preview catalogue · Replace these sample products, images and prices with your real inventory before accepting orders.</p>
+    </section>
+
+    <section class="story-section" id="story">
+      <div class="story-mark">A<span>+</span>R</div>
+      <div class="story-copy"><p class="eyebrow">THE MEANING BEHIND THE NAME</p><h2>Two names.<br><em>One shared vision.</em></h2><p>AMIRUD brings together Amita and Rudraksha in one distinctive identity. It stands for a meaningful connection, a shared beginning and the belief that possibilities have no limits.</p><a href="#contact" class="text-link">Get to know us <span>↗</span></a></div>
+    </section>
+
+    <section class="newsletter section-wrap">
+      <p class="eyebrow">STAY IN THE LOOP</p><h2>A little note from <em>AMIRUD.</em></h2>
+      <p>Have a question, collaboration idea or simply want to say hello?</p>
+      <a class="button button-outline" href="#contact">Connect with us</a>
+    </section>
+
+    <section class="contact-section section-wrap" id="contact">
+      <div><p class="eyebrow">WE'D LOVE TO HEAR FROM YOU</p><h2>Let's start a <em>conversation.</em></h2><p>For product enquiries, partnerships or support, reach out to the AMIRUD team.</p></div>
+      <form id="contactForm" class="contact-form">
+        <label>Your name<input id="contactName" name="name" required placeholder="Name"></label>
+        <label>Email address<input id="contactEmail" name="email" type="email" required placeholder="you@example.com"></label>
+        <label>Message<textarea id="contactMessage" name="message" rows="3" required placeholder="How can we help?"></textarea></label>
+        <button class="button button-dark" type="submit">Prepare email <span>↗</span></button>
+        <small>This opens your email app; no message is stored by this demo website.</small>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="wordmark" href="#home">AMIRUD<span>.</span></a>
+    <p>एक अनोखा बंधन, असीमित संभावनाएँ।</p>
+    <div class="footer-bottom"><span>© <span id="year"></span> AMIRUD. All rights reserved.</span><span>Made with intention.</span></div>
+  </footer>
+
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping bag" aria-hidden="true">
+    <div class="drawer-head"><h2>Your bag <span id="drawerCount">(0)</span></h2><button id="closeCart" aria-label="Close bag">✕</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-bottom"><div class="subtotal"><span>Subtotal</span><strong id="subtotal">₹0</strong></div><p>Shipping and taxes are calculated at checkout.</p><button id="checkoutBtn" class="button button-dark full-width">Continue to enquiry</button><small>Checkout is a demo. Connect a payment or order system before taking real orders.</small></div>
+  </aside>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
